@@ -194,7 +194,7 @@ namespace Shtrih
                 txtBox.Text = txtBox.Text.Substring(0, 12);
                 txtBox.CaretIndex = 12;
             }
-        }
+        }//некан
         public class Product
         {
             public string nameProd { get; set; }
