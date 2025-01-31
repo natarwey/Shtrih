@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Генератор штрихкода" Height="550" Width="800"
         WindowStartupLocation="CenterScreen">
-    
+
     <Window.Resources>
         <Style x:Key="ButtonStyle" TargetType="Button">
-            <Setter Property="Background" Value="#FFCCCC"/>
+            <Setter Property="Background" Value="LightCyan"/>
             <Setter Property="Margin" Value="10"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
@@ -29,7 +29,7 @@
             <Setter Property="FontFamily" Value="Times New Roman"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="FontWeight" Value="Medium"/>
-            <Setter Property="Background" Value="#FFCCCC"/>
+            <Setter Property="Background" Value="LightCyan"/>
             <Setter Property="TextWrapping" Value="Wrap"/>
             <Setter Property="HorizontalContentAlignment" Value="Center"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -37,8 +37,6 @@
             <Setter Property="MaxLength" Value="12"/>
         </Style>
         <Style x:Key="ComboBoxStyle" TargetType="ComboBox">
-            <Setter Property="BorderBrush" Value="#FFCCCC"/>
-            <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Width" Value="300"/>
@@ -60,7 +58,7 @@
                   DisplayMemberPath="nameProd" SelectedValuePath="barcodeNumber" SelectionChanged="CmbProducts_SelectionChanged"/>
         <TextBox Grid.Row="2" x:Name="txtBox" Style="{StaticResource TextBoxStyle}" TextChanged="TxtBox_TextChanged"/>
         <Button Grid.Row="3" x:Name="btnGenerate" Content="Сгенерировать код" Style="{StaticResource ButtonStyle}" Click="BtnGenerate_Click"/>
-        <Border Grid.Row="4" x:Name="barcodeBorder" Height="270" Width="600" BorderBrush="#FFCCCC" BorderThickness="1" Margin="10" Visibility="Collapsed"
+        <Border Grid.Row="4" x:Name="barcodeBorder" Height="270" Width="600" BorderBrush="LightCyan" BorderThickness="1" Margin="10" Visibility="Collapsed"
                 HorizontalAlignment="Center" VerticalAlignment="Center">
             <Canvas x:Name="barcodeCan" Height="270" Width="430" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>

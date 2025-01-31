@@ -188,7 +188,7 @@ namespace Shtrih
         private void TxtBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             txtBox.Text = new string(txtBox.Text.Where(char.IsDigit).ToArray());
-
+            
             if (txtBox.Text.Length > 12)
             {
                 txtBox.Text = txtBox.Text.Substring(0, 12);
